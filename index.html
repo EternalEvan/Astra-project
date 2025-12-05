@@ -336,7 +336,7 @@
     </div>
     <!--/ Abstract. -->
 
-    <!-- overview. -->
+    <!-- pipeline. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Pipeline</h2>
@@ -354,12 +354,26 @@
     <!-- diagram. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Diagram</h2>
+        <h2 class="title is-3">Autoregressive Rollout Diagram</h2>
         <img src="./static/images/diagram.png">
         <h2 class="subtitle is-6 has-text-centered">
           <div align=justify>
             Astra generates future video <b>chunk by chunk from an initial image</b>, actions, and optional prompts. Chunk-wise
 causal conditioning enforces temporal coherence and faithful action response.
+        </h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Mixture of Action Experts</h2>
+        <img src="./static/images/moe.png">
+        <h2 class="subtitle is-6 has-text-centered">
+          <div align=justify>
+            <b>Mixture of Action Experts (MoAE).</b> Action signals from diverse modalities are projected
+into a shared space, augmented with a history mask, and routed to modality-specialized experts. A
+dynamic router selects top-k experts, whose outputs are aggregated into unified embeddings and fed
+into the Flow Transformer, enabling versatile and precise action-conditioned generation.
         </h2>
       </div>
     </div>
