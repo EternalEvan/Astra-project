@@ -86,7 +86,25 @@
 </nav> -->
 
 
-<section class="hero">
+<section class="hero" style="position: relative; overflow: hidden;">
+    <!-- Background video -->
+    <video autoplay muted loop playsinline
+    style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      background: rgba(0,0,0,0.35);
+      z-index: -1;
+      object-fit: cover;
+      opacity: 0.35;   /* 背景更柔和，可调 */
+    ">
+    <source src="./static/videos/zigzag_drone_view.mp4" type="video/mp4">
+    </video>
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
@@ -151,17 +169,6 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
-              <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/EternalEvan/Astra"
                    class="external-link button is-normal is-rounded is-dark">
@@ -171,15 +178,6 @@
                   <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a> -->
             </div>
 
           </div>
