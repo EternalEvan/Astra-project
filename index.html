@@ -336,7 +336,7 @@
     </div>
     <!--/ Abstract. -->
 
-    <!-- Paper video. -->
+    <!-- overview. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Pipeline</h2>
@@ -347,6 +347,19 @@
             future video chunk by chunk from an initial image, actions, and optional prompts. Chunk-wise
             causal conditioning enforces temporal coherence and faithful action response.
           </div>
+        </h2>
+      </div>
+    </div>
+
+    <!-- diagram. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Diagram</h2>
+        <img src="./static/images/diagram.png">
+        <h2 class="subtitle is-6 has-text-centered">
+          <div align=justify>
+            Astra generates future video <b>chunk by chunk from an initial image</b>, actions, and optional prompts. Chunk-wise
+causal conditioning enforces temporal coherence and faithful action response.
         </h2>
       </div>
     </div>
@@ -432,7 +445,7 @@
       Astra enables arbitrary motion trajectories within the same scene. For this intersection, we generate both a left-turn and a right-turn sequence.
     </p>
     <!-- More applications -->
-    <p class="subtitle is-8 has-text-centered" style="margin-top: 40px;">
+    <p class="subtitle is-8 has-text-centered" style="margin-top: 20px;">
       More applications
     </p>
 
@@ -445,30 +458,41 @@ changes in coherent videos. These demonstrate Astra's versatility for interactiv
     </p>
 
     <!-- More applications -->
-    <p class="subtitle is-8 has-text-centered" style="margin-top: 40px;">
+    <p class="subtitle is-8 has-text-centered" style="margin-top: 20px;">
       Out-of-domain scenarios
     </p>
 
     <figure class="image is-centered">
       <img src="./static/images/ood.png" style="max-width: 80%; margin: 0 auto;">
     </figure>
-    <p style="margin-top: 0px;">
+    <p style="margin-top: 10px;">
       Astra generalizes to scenes not seen during
 training, including indoor environments, Minecraft worlds, and animation-style scenes, producing
 coherent futures that follow camera or navigation commands
     </p>
 
-    <p class="subtitle is-8 has-text-centered" style="margin-top: 40px;">
+    <p class="subtitle is-8 has-text-centered" style="margin-top: 10px;">
       Parameter analysis
     </p>
 
     <figure class="image is-centered">
       <img src="./static/images/parameter.png" style="max-width: 80%; margin: 0 auto;">
     </figure>
-    <p style="margin-top: 0px;">
+    <p style="margin-top: 10px;">
       Astra introduces the smallest parameter overhead among all
 methods, adding only lightweight adapters while preserving the efficiency of the frozen backbone.
     </p>
+
+    <p class="subtitle is-8 has-text-centered" style="margin-top: 10px;">
+      Datasets
+    </p>
+
+    <figure class="image is-centered">
+      <img src="./static/images/datasets.png" style="max-width: 80%; margin: 0 auto;">
+    </figure>
+    <p style="margin-top: 10px;">
+      Datasets used in experiments, along with their actions and sample sizes. For each dataset,
+we list the action type, followed by the dimensionality of its representation.
   </div>
 </section>
     <!--/ Matting. -->
