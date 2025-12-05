@@ -368,7 +368,7 @@ causal conditioning enforces temporal coherence and faithful action response.
 <div class="columns is-centered">
   <div class="column is-four-fifths">
 
-    <div class="columns is-centered" style="margin-top: 30px; column-gap: 10px;">
+    <div class="columns is-centered" style="margin-top: 0px; column-gap: 10px;">
 
       <!-- Left: wider image -->
       <div class="column is-8 has-text-centered">
@@ -532,7 +532,19 @@ methods, adding only lightweight adapters while preserving the efficiency of the
     <p style="margin-top: 10px;">
       Datasets used in experiments, along with their actions and sample sizes. For each dataset,
 we list the action type, followed by the dimensionality of its representation.
-  </div>
+    </p>
+
+    <p class="subtitle is-8 has-text-centered" style="margin-top: 10px;">
+      Effect of visual inertia
+    </p>
+
+    <figure class="image is-centered">
+      <img src="./static/images/curve-2.png" style="max-width: 80%; margin: 0 auto;">
+    </figure>
+    <p style="margin-top: 10px;">
+      As the history length increases, video quality improves, but the
+action-following score drops sharply, illustrating the visual inertia phenomenon. This motivates our designs in Astra.
+    </p>
 </section>
     <!--/ Matting. -->
 
@@ -580,6 +592,67 @@ we list the action type, followed by the dimensionality of its representation.
 
   </div>
 </section> -->
+<section class="section hero is-light" style="padding-top: 20px;">
+  <div class="container is-max-desktop content">
+
+    <!-- Centered title -->
+    <h2 class="title has-text-centered">Future Works</h2>
+
+    <!-- Left-aligned item list -->
+    <ul style="list-style: none; padding-left: 0; text-align: left; margin: 0 auto; max-width: 600px;">
+
+      <li style="margin-bottom: 8px;">
+        <span style="
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          border: 2px solid #555;
+          margin-right: 8px;
+          vertical-align: middle;
+        "></span>
+        Extend Astra to longer-horizon rollouts (10–30+ seconds)
+      </li>
+
+      <li style="margin-bottom: 8px;">
+        <span style="
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          border: 2px solid #555;
+          margin-right: 8px;
+          vertical-align: middle;
+        ">✓</span>
+        Add multi-view camera control support
+      </li>
+
+      <li style="margin-bottom: 8px;">
+        <span style="
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          border: 2px solid #555;
+          margin-right: 8px;
+          vertical-align: middle;
+        "></span>
+        Incorporate physics-aware consistency modules
+      </li>
+
+      <li>
+        <span style="
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          border: 2px solid #555;
+          margin-right: 8px;
+          vertical-align: middle;
+        "></span>
+        Train interactive agents using Astra as the world model
+      </li>
+
+    </ul>
+
+  </div>
+</section>
 
 
 <section class="section" id="BibTeX">
