@@ -364,24 +364,30 @@ causal conditioning enforces temporal coherence and faithful action response.
       </div>
     </div>
 
-    <!-- New: side-by-side image + video -->
+    <!-- New: side-by-side image + video (wrapped inside is-four-fifths to align widths) -->
+<div class="columns is-centered">
+  <div class="column is-four-fifths">
+
     <div class="columns is-centered" style="margin-top: 30px; column-gap: 10px;">
 
       <!-- Left: image -->
       <div class="column is-half has-text-centered">
         <img src="./static/images/autoregression.png"
-             style="height: 100px; object-fit: cover; border-radius: 6px;">
+             style="height: 150px; object-fit: cover; border-radius: 6px;">
       </div>
-    
+
       <!-- Right: video -->
       <div class="column is-half has-text-centered">
         <video autoplay controls muted loop playsinline
-               style="height: 100px; object-fit: cover; border-radius: 6px;">
+               style="height: 150px; object-fit: cover; border-radius: 6px;">
           <source src="./static/videos/zigzag_drone_view.mp4" type="video/mp4">
         </video>
       </div>
-    
+
     </div>
+
+  </div>
+</div>
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
